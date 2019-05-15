@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.c1 {
+		width: 200px;
+		height: 200px;
+		}
+	#d1 {
+		border: 1px solid black;
+		margin-top: 50px;
+		margin-right: 100px;	
+		}
+	#d2 {
+		border: 1px solid red;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		}
+	#d3 {
+		border : 1px solid blue;
+		margin-left: 100px;
+		}
+	#d4 {
+		border: 1px solid yellow;
+		margin: 10px;  /* top:10 right:10 bottom:10 left:10 */
+		margin: 20px 10px 30px 20px;
+		margin: 20px 10px;   /* top:20 right:10 bottom:20 left:10 */ 
+		margin: 20px 10px 5px; /* top:20 right:10 bottom:5 left:10 */	
+		}
+	#d5 {
+		background-color: red;
+		/* auto : 전체해상도, 컨텐츠(요소)의 넓이 (꼭 지정해줘야 함). 자동으로 해상도에 맞춤 */
+		margin: 0 auto;   
+	}
+	#d6 {
+		background-color:green;
+		margin: 0 auto;
+		}
+	#d7{
+		width: 600px;
+		height: 300px;
+		background-color: gray;
+		margin: 0 auto;
+		}
+	
+	#d8 {		/* 자식은 부모의 컨텐츠넓이 를 따라감 */
+		width: 200px;
+		height: 150px;
+		background-color: lime;
+		margin: 0 auto;
+		}
+		
+	
+</style>
+
+</head>
+<body>
+	<div class ="c1" id="d1"></div> 
+	<div class= "c1" id="d2"></div> 
+	<div class = "c1" id="d3" ></div> 
+	<div class = "c1" id="d4" ></div>
+	<div class = "c1" id="d5" ></div>
+	<div  id="d6" > <h1>Test</h1> </div>
+	<div id="d7">
+		<div id="d8">
+	</div>
+	</div></body>
+</html>
